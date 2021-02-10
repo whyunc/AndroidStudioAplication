@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/headContent"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/rounded1"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/headLineIMG"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/sub1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="40dp"/>
+
+        <TextView
+            android:id="@+id/taglineMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="title"
+            android:textSize="18sp"
+            android:textColor="@color/second_whhite"
+            android:layout_toStartOf="@+id/headLineIMG"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="40dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/taglineMain"
+            android:layout_toStartOf="@+id/headLineIMG"
+            android:text="second_tagline"
+            android:textSize="10sp"
+            android:layout_marginEnd="40dp"
+            android:textColor="@color/second_whhite"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/tv_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headContent"
+        android:layout_marginTop="20dp"
+        tools:listitem="@layout/row_item_hero"/>
+
+</RelativeLayout>

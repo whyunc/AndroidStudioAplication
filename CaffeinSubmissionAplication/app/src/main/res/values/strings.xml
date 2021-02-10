@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CaffeinSubmissionAplication</string>
+    <string name="about">About Me</string>
+    <string name="menuCoffee_item">Menu Coffee</string>
+    <string name="menuCoffee_detail">Detail Menu Coffee</string>
+    <string name="name">Wahyu Nur Cahyo</string>
+    <string name="email">wnc1304@gmail.com</string>
+    <string name="deskripsi">Deskripsi</string>
+</resources>
